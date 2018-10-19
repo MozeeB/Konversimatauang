@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.mozeeb.konversimatauang.MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        app:srcCompat="@drawable/con" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/uang_input"
+            android:layout_width="164dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="45dp"
+            android:ems="10"
+            android:hint="0 Rupiah"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/hasil_konversi"
+            android:layout_width="149dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/uang_input"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="235dp"
+            android:layout_marginTop="-38dp"
+            android:text="Hasil Konversi"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/uang_input"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="193dp"
+            android:text="="
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="266dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/uang_input"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="73dp"
+            android:layout_marginTop="50dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="SILAHKAN DIPILIH"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/rpusd"
+            android:layout_width="237dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="84dp"
+            android:layout_marginTop="191dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="Rp > USD"
+            android:onClick="toUSD"
+            android:textColor="@android:color/background_light" />
+
+        <Button
+            android:id="@+id/rpyen"
+            android:layout_width="237dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="84dp"
+            android:layout_marginBottom="199dp"
+            android:background="@color/colorPrimary"
+            android:onClick="toYEN"
+            android:text="Rp > YEN"
+            android:textColor="@android:color/background_light" />
+
+        <Button
+            android:id="@+id/rpeuro"
+            android:layout_width="237dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/uang_input"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="84dp"
+            android:layout_marginTop="228dp"
+            android:background="@color/colorAccent"
+            android:onClick="toEuro"
+            android:text="Rp > Euro"
+            android:textColor="@android:color/background_light" />
+
+    </RelativeLayout>
+
+</LinearLayout>
